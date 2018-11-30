@@ -1,0 +1,10 @@
+{
+    "require": {
+        "aws/aws-sdk-php": "^3.79"
+    },
+    "autoload": {
+        "psr-4": {
+            "Go1\\": "src"
+        }
+    }
+}

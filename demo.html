@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GO1 - Hackathon @ Team 9</title>
+  <style type="text/css">
+    .blog-post-content {
+      margin: 30px 0;
+    }
+    #amazon-polly-audio-table {
+      display: table;
+      width: 50%;
+      border: 0 !important;
+      margin: 0;
+    }
+
+    #amazon-polly-audio-table tbody {
+      border: 0 !important;
+    }
+
+    #amazon-polly-audio-table tr {
+      border: 0 !important;
+    }
+
+    #amazon-polly-logo-tab {
+      width: 60px;
+      display: table-cell;
+      vertical-align: top;
+      padding-bottom: 50px;
+    }
+
+    #amazon-polly-logo {
+      height: 50px;
+      width: 50px;
+    }
+
+    #amazon-polly-audio-tab {
+      width: auto;
+      display: table-cell;
+      border: 0;
+    }
+
+    #amazon-ai-player-label {
+      font-size: 80%;
+    }
+
+    #amazon-polly-by-tab {
+      text-align: right;
+    }
+
+    #amazon-polly-by-tab img {
+      max-height: 2em;
+    }
+
+    #amazon-polly-trans-src {
+      font-weight: bold;
+    }
+
+    .amazon-polly-trans-label {
+      display: inline;
+      font-size: .6em;
+    }
+
+    .amazon-polly-trans-label a {
+      text-decoration: none;
+    }
+
+    .amazon-ai-player {
+      width: 100%;
+    }
+
+    .amazon-polly-transcript-area {
+      height: 6em;
+      width: 100%;
+    }
+
+    .amazon-ai-flag {
+      display: inline-block;
+      width: 35px;
+      height: 15px;
+      margin: 0;
+    }
+
+    .amazon-ai-flag-image {
+      max-height: 100%;
+    }
+  </style>
+</head>
+<body>
+<section class="blog-post-content" property="articleBody">
+  <table id="amazon-polly-audio-table"  >
+    <tbody>
+    <tr>
+      <td id="amazon-polly-audio-tab">
+        <div id="amazon-ai-player-label"></div>
+        <div id="amazon-ai-player-container">
+          <audio class="amazon-ai-player" id="amazon-ai-player" preload="none" controls="">
+            <source type="audio/mpeg"
+                    src="https://gvn-hackathon.s3.ap-southeast-1.amazonaws.com/audio/demo-ssml.mp3">
+          </audio>
+        </div>
+        <div id="amazon-polly-by-tab">
+          <a href="https://aws.amazon.com/polly/" target="_blank" rel="noopener noreferrer"><img
+              src="https://a0.awsstatic.com/aws-blog/images/Voiced_by_Amazon_Polly_EN.png" width="554" height="56"></a>
+        </div>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</section>
+</body>
+</html>
