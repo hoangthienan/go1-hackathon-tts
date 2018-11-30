@@ -18,4 +18,7 @@ return [
         'credentials' => new \Aws\Credentials\Credentials($key, $secret),
         'bucket'      => 'hackathon',
     ],
+    'loOptions'    => [
+        'jwt' => '',
+    ],
 ];

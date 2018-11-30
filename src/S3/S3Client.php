@@ -30,7 +30,7 @@ class S3Client
             ]);
 
             # return the URL to the object.
-            return $result['ObjectURL'] . PHP_EOL;
+            return $result['ObjectURL'];
         } catch (S3Exception $e) {
             echo $e->getMessage() . PHP_EOL;
         }
