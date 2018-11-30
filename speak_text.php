@@ -20,13 +20,18 @@ $speech = [
 ];
 
 use Go1\Polly\PollyClient;
+use Go1\S3\S3Client;
 
 # get service handle
 try {
     $pollyClient = new PollyClient($config['pollyOptions']);
+    $s3Client = new S3Client($config['s3Options']);
 } catch (\Exception $e) {
     print_r($e);
 }
 
 $fileName = 'demo.mp3';
 $response = $pollyClient->speech(UPLOAD_DIR, $fileName, $speech);
+$s3Url = $s3Client->upload(UPLOAD_DIR, $fileName);
+
+echo $s3Url;

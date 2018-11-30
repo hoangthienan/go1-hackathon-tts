@@ -16,6 +16,6 @@ return [
         'version'     => 'latest',
         'region'      => 'ap-southeast-1',
         'credentials' => new \Aws\Credentials\Credentials($key, $secret),
-        'bucket'  => 'hackathon',
+        'bucket'      => 'hackathon',
     ],
 ];
