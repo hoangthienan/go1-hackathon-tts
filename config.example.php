@@ -4,7 +4,7 @@ $key = ''; # Change these to your respective AWS credentials
 $secret = '';
 
 return [
-    'pollyOptions' => [
+    'pollyOptions'   => [
         'version'     => 'latest',
         'region'      => 'ap-southeast-1', # Change this to your respective AWS region
         'credentials' => [
@@ -12,13 +12,16 @@ return [
             'secret' => $secret,
         ],
     ],
-    's3Options'    => [
+    's3Options'      => [
         'version'     => 'latest',
         'region'      => 'ap-southeast-1',
         'credentials' => new \Aws\Credentials\Credentials($key, $secret),
         'bucket'      => 'hackathon',
     ],
-    'loOptions'    => [
+    'openFptOptions' => [
+        'apikey' => '',
+    ],
+    'loOptions'      => [
         'jwt' => '',
     ],
 ];
